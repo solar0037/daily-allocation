@@ -1,0 +1,29 @@
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin: 22px;
+}
+
+.add {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.tasks {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
