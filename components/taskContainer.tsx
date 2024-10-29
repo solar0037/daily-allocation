@@ -33,6 +33,7 @@ export default function TaskContainer() {
                 idx !== index
             );
             setTasks(updatedTasks);
+            saveTasks(updatedTasks);
         } else {
             const updatedTasks = tasks.map((task, idx) =>
                 idx === index ? { ...task, done: done } : task
@@ -73,8 +74,8 @@ export default function TaskContainer() {
                         key={index}
                         title={task.title}
                         done={task.done}
-                        onChangeInput={(e) => updateTasks(index, e.target.checked, false)}
-                        onChangeButton={(e) => updateTasks(index, true, false)}
+                        onChange={(e) => updateTasks(index, e.target.checked, false)}
+                        onClick={(e) => updateTasks(index, true, true)}
                     />
                 ))}
             </ul>
